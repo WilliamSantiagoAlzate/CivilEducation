@@ -1,3 +1,42 @@
-body {
-  background: #0000FF;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1028px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+header {
+  background-image: url("../imagenes/fondo-home.jpg");
+  background-size: cover;
+  height: 100vh;
+  z-index: 1;
+}
+
+#menu {
+  height: 60px;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  background-color: #333333;
+  z-index: 2;
+}
+
+#menu .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#hero {
+  z-index: 2;
+  height: 90vh;
+}
+
+#hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
