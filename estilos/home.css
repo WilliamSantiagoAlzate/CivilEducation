@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -8,7 +9,7 @@ a {
 }
 
 .container {
-  max-width: 1028px;
+  max-width: 90vw;
   margin: 0 auto;
   height: 100%;
 }
@@ -21,9 +22,9 @@ header {
 }
 
 #menu {
-  height: 70px;
+  height: 8vh;
   width: 100vw;
-  position: sticky;
+  position: fixed;
   top: 0;
   background: rgba(0,0,0,0.8);
   z-index: 2;
@@ -37,15 +38,23 @@ header {
 
 #menu h1 {
   color: white;
+  font-size: 5vh;
 }
 
 #menu a {
   color: black;
-  font-size: 1.5em;
+  font-size: 3vh;
   margin: 0 20px;
   padding: 5px 15px;
   background: white;
   border-radius: 6px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+#menu a:hover {
+  transform: scale(1.15);
+  transition: 0.5s;
 }
 
 #description {
@@ -54,7 +63,6 @@ header {
 }
 
 #description .container {
-  margin-top: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,10 +70,50 @@ header {
 }
 
 #description h1 {
+  margin-top: 50vh;
   text-align: center;
   color: white;
   font-size: 5vw;
   background: rgba(0,0,0,0.8);
   border-radius: 20px;
   padding: 20px 10px;
+}
+
+#arrow {
+  margin-top: 45vh;
+  display: flex;
+  justify-content: center;
+}
+
+#arrow a {
+  animation: arrow 1s infinite;
+  color: black;
+  font-size: 7vh;
+}
+
+#arrow a:hover {
+  animation: none;
+  color: white;
+}
+
+/* Descripcion del contenido de la pagina web */
+
+#content {
+  height: 100vh;
+  width: 300px;
+}
+
+/* Animaciones de la pagina web */
+@keyframes arrow {
+  0% {
+    transform: translate(0, 0);
+  }
+
+   50% {
+    transform: translate(0, 1.5vh);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
