@@ -4,8 +4,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 .container {
@@ -36,25 +44,23 @@ header {
   align-items: center;
 }
 
-#menu h1 {
+#logo a {
   color: white;
   font-size: 5vh;
 }
 
-#menu a {
+#buttons a {
   color: black;
   font-size: 3vh;
   margin: 0 20px;
   padding: 5px 15px;
   background: white;
   border-radius: 6px;
-  transform: scale(1);
-  transition: 0.5s;
 }
 
-#menu a:hover {
-  transform: scale(1.15);
-  transition: 0.5s;
+#buttons a:hover {
+  box-shadow: 0px 0px 5px 2px rgba(200, 200, 200, 0.8);
+  transition: all 0.2s;
 }
 
 #description {
@@ -85,15 +91,14 @@ header {
   justify-content: center;
 }
 
-#arrow a {
+#arrow i {
   animation: arrow 1s infinite;
   color: black;
   font-size: 7vh;
 }
 
-#arrow a:hover {
-  animation: none;
-  color: white;
+#arrow i:hover {
+  color: rgba(100, 100, 100, 1);
 }
 
 /* Descripcion del contenido de la pagina web */
