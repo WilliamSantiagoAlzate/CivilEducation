@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1028px;
   margin: 0 auto;
@@ -10,33 +14,58 @@
 }
 
 header {
-  background-image: url("../imagenes/fondo-home.jpg");
+  background: linear-gradient(rgba(226,226,226,0.5), rgba(226,226,226,0.5)), url("../imagenes/fondo-home.jpg");
   background-size: cover;
   height: 100vh;
   z-index: 1;
 }
 
 #menu {
-  height: 60px;
+  height: 70px;
   width: 100vw;
   position: sticky;
   top: 0;
-  background-color: #333333;
+  background: rgba(0,0,0,0.8);
   z-index: 2;
 }
 
 #menu .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-#hero {
+#menu h1 {
+  color: white;
+}
+
+#menu a {
+  color: black;
+  font-size: 1.5em;
+  margin: 0 20px;
+  padding: 5px 15px;
+  background: white;
+  border-radius: 6px;
+}
+
+#description {
   z-index: 2;
-  height: 90vh;
+  height: 45vh;
 }
 
-#hero .container {
+#description .container {
+  margin-top: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 60%;
+}
+
+#description h1 {
+  text-align: center;
+  color: white;
+  font-size: 5vw;
+  background: rgba(0,0,0,0.8);
+  border-radius: 20px;
+  padding: 20px 10px;
 }
