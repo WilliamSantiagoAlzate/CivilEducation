@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  height: 8vh;
+  width: 90vw;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 1;
+  border-radius: 0vh 0vh 2vh 2vh;
+  box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+#logo a{
+  color: black;
+  font-size: 5vh;
+}
+
+#buttons a {
+  color: black;
+  font-size: 4vh;
+  padding: 0 1vw;
+}
+
+main .container {
+  margin-top: 8vh;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#courses {
+  width: 50%;
+  background: white;
+  border-radius: 2vh;
+  box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 1);
+  padding: 5vh;
+  text-align: center;
+}
+
+#courses h2 {
+  font-size: 5vh;
+  padding-bottom: 3vh;
+}
+
+#courses p {
+  font-size: 3vh;
+  padding-bottom: 4vh;
+}
+
+#courses a {
+  color: white;
+  font-size: 3vh;
+  background: black;
+  padding: 1vh 2vh;
+  border-radius: 1vh;
+}
