@@ -12,10 +12,6 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
-
 .container {
   max-width: 90vw;
   margin: 0 auto;
