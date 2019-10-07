@@ -52,6 +52,7 @@ header .container {
 main .container {
   margin-top: 8vh;
   height: 90vh;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,17 +60,25 @@ main .container {
 }
 
 #header-course {
-  width: 50%;
+  width: 80%;
   background: white;
   border-radius: 1vh 1vh 0vh 0vh;
   box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 1);
+  margin-bottom: 1px;
+}
+
+#header-container {
+  width: auto;
   padding: 1vh 5vh;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1px;
   font-size: 2vh;
+}
+
+#header-course .back {
+  display: flex;
 }
 
 #header-course a {
@@ -82,6 +91,7 @@ main .container {
   font-size: 2vh;
   transform: scale(1);
   transition: 0.3s;
+  margin-right: 1.5vh;
 }
 
 #header-course i:hover {
@@ -90,39 +100,10 @@ main .container {
 }
 
 #course {
-  width: 50%;
+  width: 80%;
+  height: 70vh;
   background: white;
   border-radius: 0vh 0vh 1vh 1vh;
   box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 1);
-  padding: 5vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-#course h2 {
-  font-size: 5vh;
-  padding-bottom: 3vh;
-}
-
-#course p {
-  font-size: 3vh;
-  padding-bottom: 3vh;
-}
-
-#course a {
-  color: black;
-  font-size: 3vh;
-  width: 100%;
-  padding: 1vh 0;
-  border-bottom: 2px solid black;
-}
-
-#course a:hover {
-  background: black;
-  color: white;
-}
-
-#course .first {
-  border-top: 2px solid black;
+  overflow: hidden;
 }
