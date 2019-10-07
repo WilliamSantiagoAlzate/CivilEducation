@@ -8,9 +8,17 @@ a {
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+  width: 1.2vw;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 0.5vw;
+  border-right: 1px solid white;
+}
 #course {
-  height: 250vh;
-  padding: 1vh 0;
+  height: 300vh;
+  padding: 1.5vh 0;
   margin-left: 5vw;
   text-align: center;
 }
@@ -31,6 +39,7 @@ a {
   width: 2vw;
   margin-bottom: 1px;
   border-radius: 5px;
+  border-left: 1px solid white;
 }
 
 #section-container a:hover {
