@@ -8,6 +8,16 @@ a {
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+  width: 1.2vw;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 0.6vw;
+  border-right: 1px solid white;
+}
+
 #course {
   height: 2000px;
   padding: 1vh 0;
