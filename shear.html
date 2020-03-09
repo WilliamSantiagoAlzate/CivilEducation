@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>CivilEducation</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="estilos/shear.css">
   </head>
   <body>
@@ -16,13 +17,42 @@
       </div>
       <div id="course-container">
         <div id="course-content">
-          <h3>Cortante</h3>
+          <h1>Calcular separación</h1>
+          <br>
+          <div class="data-container">
+            <div class="data-value">
+              <label>Vu (kN/m)</label>
+              <label>f'c (MPa)</label>
+              <label>fy (MPa)</label>
+              <label>Av (cm2)</label>
+              <label>B (m)</label>
+              <label>H (m)</label>
+              <label>Cr (m)</label>
+              <br>
+              <label>S (cm)</label>
+            </div>
+            <div class="data-value">
+              <input type="number" id="vu">
+              <input type="number" id="fc">
+              <input type="number" id="fy">
+              <input type="number" id="av">
+              <input type="number" id="b">
+              <input type="number" id="h">
+              <input type="number" id="cr">
+              <br>
+              <input type="number" disabled id="s">
+            </div>
+          </div>
         </div>
         <div id="course-view">
-
+          <p id="result">
+            \[S = {(Av)(fy)(d)\over {Vu - 0.1275(B)(d)\sqrt{f'c}}} \]
+          </p>
+          <canvas id="seccionViga" width="300px" height="500px"></canvas>
         </div>
       </div>
     </div>
   <script src="https://kit.fontawesome.com/134ef9477a.js" crossorigin="anonymous"></script>
+  <script src="js/shear.js"></script>
   </body>
 </html>

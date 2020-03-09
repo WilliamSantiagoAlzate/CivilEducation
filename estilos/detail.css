@@ -56,16 +56,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #course-content {
-  width: 45%;
   height: 100%;
-  padding-right: 5vh;
-}
-
-#course-view {
-  width: 45%;
-  height: 100%;
-  border-left: 1px solid #ddd;
-  padding-left: 5vh;
+  margin: auto;
 }
 
 #course h2 {

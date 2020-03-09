@@ -77,3 +77,21 @@ body::-webkit-scrollbar-thumb {
   font-size: 3vh;
   padding-bottom: 3vh;
 }
+
+.data-container {
+  display: flex;
+}
+
+.data-value {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+label, input {
+  margin-bottom: 5px;
+}
+
+#course-view p {
+  font-size: 20px;
+}

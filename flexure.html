@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>CivilEducation</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="estilos/flexure.css">
   </head>
   <body>
@@ -16,13 +17,45 @@
       </div>
       <div id="course-container">
         <div id="course-content">
-          <img src="https://latex.codecogs.com/gif.latex?\frac{3}{2}+\sqrt{5}">
+          <h1>Calcular acero</h1>
+          <br>
+          <div class="data-container">
+            <div class="data-value">
+              <label>Mu (kN/m)</label>
+              <label>f'c (MPa)</label>
+              <label>fy (MPa)</label>
+              <label>B (m)</label>
+              <label>H (m)</label>
+              <label>Cr (m)</label>
+              <br>
+              <label>a (m)</label>
+              <label>As (cm2)</label>
+            </div>
+            <div class="data-value">
+              <input type="number" id="mu">
+              <input type="number" id="fc">
+              <input type="number" id="fy">
+              <input type="number" id="b">
+              <input type="number" id="h">
+              <input type="number" id="cr">
+              <br>
+              <input type="number" disabled id="a">
+              <input type="number" disabled id="as">
+            </div>
+          </div>
         </div>
         <div id="course-view">
-
+          <p id="result-1">
+            \[a = d - \sqrt{d^2-{2(Mu)\over 0.765(B)(f'c)}}\]
+          </p>
+          <p id="result-2">
+            \[As = {Mu\over 0.9(fy)(d-{a\over 2})}\]
+          </p>
+          <canvas id="seccionViga" width="300px" height="500px"></canvas>
         </div>
       </div>
     </div>
   <script src="https://kit.fontawesome.com/134ef9477a.js" crossorigin="anonymous"></script>
+  <script src="js/flexure.js"></script>
   </body>
 </html>
